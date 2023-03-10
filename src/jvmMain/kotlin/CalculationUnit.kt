@@ -1,5 +1,5 @@
 interface CalculationUnit {
-    fun calculate(amount: Int) :Price
+    fun calculate(amount: Double) :Price
 
     override fun toString(): String
 }

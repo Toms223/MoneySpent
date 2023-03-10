@@ -1,12 +1,16 @@
 import kotlin.reflect.typeOf
 
-data class Price(var value: Int) {
-    fun toPrice(value: Int): Price{
+data class Price(var value: Double) {
+    fun toPrice(value: Double): Price{
         return Price(value)
     }
 
-    fun toValue(): Int {
+    fun toValue(): Double {
         return value
+    }
+
+    fun changeValue(newVale: Double){
+        value = newVale
     }
     override fun toString(): String {
         return "${value}€"

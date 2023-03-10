@@ -12,6 +12,7 @@ version = "1.0-SNAPSHOT"
 repositories {
     google()
     mavenCentral()
+
     maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
 }
 
@@ -24,6 +25,7 @@ kotlin {
         val jvmMain by getting {
             dependencies {
                 implementation(compose.desktop.currentOs)
+                implementation("com.google.code.gson:gson:2.10.1")
             }
         }
         val jvmTest by getting
